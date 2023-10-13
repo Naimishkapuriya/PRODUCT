@@ -3,6 +3,7 @@ import "./App.css";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import Singleproduct from "./Singleproduct";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Succes from "./Succes";
 
 // // import { FaStar, FaStarHalfAlt } from "react-icons/ai";
 // // import
@@ -17,6 +18,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Product />} />
         <Route path="/Singleproduct/:id" element={<Singleproduct />} />
+        <Route path="/Succes" element={<Succes />} />
       </Routes>
     </BrowserRouter>
   );
